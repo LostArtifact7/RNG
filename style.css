@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161616;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+  margin-bottom: 50px;
+}
+
+.rngButton {
+  background-color: #424242;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 20px rgb(128, 128, 128, 0.5);
+  width: 40%
+}
+
+.rngButton:hover {
+  background-color: #3d3d3d;
+  transform: scale(1.15);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#word {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+#chance {
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(currentColor, 0.1);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(currentColor, 1);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(currentColor, 0.1);
+  }
+}
